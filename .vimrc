@@ -1,6 +1,11 @@
 syntax enable
 colorscheme monokai
 
+" For pathogen
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+
 set nu
 set autoindent
 set smarttab
