@@ -34,3 +34,7 @@ autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
 
 map <leader>\ :noh<CR>
+
+"ctrl-p plugin mapping
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
