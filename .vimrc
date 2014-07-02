@@ -1,5 +1,7 @@
 syntax enable
-colorscheme monokai
+
+set t_Co=256
+colorscheme molokai
 
 " For pathogen
 execute pathogen#infect()
