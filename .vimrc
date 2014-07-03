@@ -1,7 +1,7 @@
 syntax enable
 
 set t_Co=256
-colorscheme molokai
+colorscheme monokai
 
 " For pathogen
 execute pathogen#infect()
@@ -16,6 +16,9 @@ set shiftwidth=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
+set cursorline
+set hlsearch
+
 filetype indent on
 filetype on
 filetype plugin on
