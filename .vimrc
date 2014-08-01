@@ -47,3 +47,9 @@ let g:ctrlp_cmd = 'CtrlP'
 " Down should be the next line in case of long lines
 noremap j gj
 noremap k gk
+
+" Switch between splits via ctrl HJKL in all directions
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
