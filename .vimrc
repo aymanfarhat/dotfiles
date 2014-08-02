@@ -56,3 +56,6 @@ nmap <C-l> <C-w>l
 
 " Ignore vendor dir in laravel for ctrlp to load faster
 set wildignore+=*/vendor/**
+
+" Shortcut to edit a file in the current directory relative to current file
+nmap :ed :edit %:p:h/
