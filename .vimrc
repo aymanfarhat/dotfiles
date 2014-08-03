@@ -59,3 +59,6 @@ set wildignore+=*/vendor/**
 
 " Shortcut to edit a file in the current directory relative to current file
 nmap :ed :edit %:p:h/
+
+" Disable swap files completely
+:set noswapfile
