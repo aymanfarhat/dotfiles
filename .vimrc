@@ -18,6 +18,12 @@ set shiftwidth=4
 set expandtab
 set cursorline
 set hlsearch
+set splitright
+set splitbelow
+set noswapfile
+
+set statusline=%<\ %f\ %m%y%w%=\ L:\ \%l\/\%L\ C:\ \%c\
+set laststatus=2
 
 filetype indent on
 filetype on
@@ -40,25 +46,18 @@ autocmd InsertLeave * :set relativenumber
 
 map <leader>\ :noh<CR>
 
-"ctrl-p plugin mapping
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
 
 " Down should be the next line in case of long lines
 noremap j gj
 noremap k gk
 
-" Switch between splits via ctrl HJKL in all directions
-nmap <C-h> <C-w>h
-nmap <C-j> <C-w>j
-nmap <C-k> <C-w>k
-nmap <C-l> <C-w>l
+set hidden
+nmap <C-l> :bn<CR>
+nmap <C-h> :bp<CR>
+nmap <C-@> :ls<CR>:b<space>
 
 " Ignore vendor dir in laravel for ctrlp to load faster
 set wildignore+=*/vendor/**
 
 " Shortcut to edit a file in the current directory relative to current file
 nmap :ed :edit %:p:h/
-
-" Disable swap files completely
-:set noswapfile
