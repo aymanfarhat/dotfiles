@@ -1,6 +1,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+fortune -asn 150 | cowsay
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -10,7 +12,6 @@ ZSH_THEME="simple"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -56,7 +57,7 @@ source $ZSH/oh-my-zsh.sh
 
 
 export ANDROID_HOME=$HOME/android-sdk-macosx
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 export WORKON_HOME=$HOME/.virtualenvs
@@ -83,3 +84,22 @@ export DOCKER_HOST=tcp://192.168.59.103:2375
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+export LC_ALL=en_US.UTF-8  
+export LANG=en_US.UTF-8
+
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/ayman/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
+
+# Add envoy to PATH
+export PATH=$HOME/.composer/vendor/bin:$PATH
+
+# Go paths
+export GOPATH=$HOME/Go
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin

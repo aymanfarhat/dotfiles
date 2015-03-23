@@ -61,3 +61,4 @@ set wildignore+=*/vendor/**
 
 " Shortcut to edit a file in the current directory relative to current file
 nmap :ed :edit %:p:h/
+set noeb vb t_vb=
